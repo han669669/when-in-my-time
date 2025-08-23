@@ -9,7 +9,6 @@ function App() {
   const [inputValue, setInputValue] = useState('');
   const [result, setResult] = useState<{ localTime: string; timeLeft: string } | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [isFocused, setIsFocused] = useState(false);
 
   const handleConvert = (value?: string) => {
     const finalValue = typeof value === 'string' ? value : inputValue;
